@@ -4,9 +4,10 @@ var app = express.createServer(express.logger());
 
 var fs = require('fs');
 
-var buff = new Buffer(5);
+var mymessage = fs.readFile("index.html").toString('utf-8');
 
-var mymessage  = fs.readFile("index.html", 'utf-8');
+
+/*var mymessage  = fs.readFile("index.html", 'utf-8');*/
 
 /*var mymessage = buff.toString('utf-8');*/
 
