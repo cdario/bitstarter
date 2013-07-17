@@ -2,6 +2,8 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
+var fs = require('fs');
+
 var buff = fs.readFile("index.buff");
 
 var mymessage = buff.toString('utf-8');
