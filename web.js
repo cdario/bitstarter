@@ -3,6 +3,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 var fs = require('fs');
+var buff = new Buffer(5);
 
 var buff = fs.readFile("index.html");
 
